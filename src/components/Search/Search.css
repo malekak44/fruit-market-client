@@ -1,0 +1,30 @@
+#search-form {
+    width: 30%;
+    margin: 20px auto;
+}
+
+#search-form input {
+    border: none;
+    border-radius: 0;
+    padding: 0.76rem 14%;
+    font-size: 17px;
+    background-color: #E6E9EC;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-image: url('../../icons/search.png');
+    background-repeat: no-repeat;
+    background-size: 28px;
+    background-position: 7px 11px;
+}
+
+#search-form input:focus {
+    box-shadow: none;
+}
+
+#searchBtn {
+    font-size: 17px;
+    padding: 12px 25px;
+    margin-left: -24px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
