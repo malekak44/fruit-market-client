@@ -6,6 +6,11 @@ import Header from '../Header/Header';
 import Search from '../Search/Search';
 
 const Home = () => {
+    const url = window.location.href;
+    if (!url.includes('login')) {
+        document.body.style.backgroundImage = "none";
+    }
+
     return (
         <>
             <Header />

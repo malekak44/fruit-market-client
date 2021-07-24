@@ -3,8 +3,17 @@ import './Header.css';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import logo from '../../icons/logo.png';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { UserContext } from '../../App';
 
 const Header = () => {
+    const [signedInUser] = useContext(UserContext);
+    let loginStatus;
+    if (signedInUser.name && signedInUser.image) {
+        loginStatus = <img id="userImage" src={signedInUser.image} alt={signedInUser.name} />;
+    } else {
+        loginStatus = <Link to="/login" style={{ textDecoration: "none", color: "rgba(0, 0, 0, .55)" }}><button>Login</button></Link>;
+    }
     return (
         <Navbar collapseOnSelect expand="lg">
             <Container>
@@ -30,9 +39,7 @@ const Header = () => {
                         </Nav.Link>
                         <Nav.Link>Deals</Nav.Link>
                         <Nav.Link>
-                            <Link to="/login" style={{ textDecoration: "none", color: "rgba(0, 0, 0, .55)" }}>
-                                <button>Login</button>
-                            </Link>
+                            {loginStatus}
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

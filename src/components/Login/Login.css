@@ -1,0 +1,119 @@
+.form-container {
+    max-width: 350px;
+    margin: auto;
+    border: 2px solid;
+    padding: 20px;
+    border-radius: 5px;
+    color: black;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.form-container .btn {
+    background-color: saddlebrown !important;
+    border: none !important;
+    font-weight: 500;
+    margin-top: 15px;
+    width: 100%;
+    padding: 8px 0px;
+    color: white;
+}
+
+.form-container .btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: white;
+}
+
+.form-container .btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: white !important;
+    color: black;
+}
+
+.login-area .form-group {
+    margin-top: 10px !important;
+}
+
+.login-area :focus {
+    color: black !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid black !important;
+}
+
+.form-container p {
+    margin: auto;
+    margin-top: 10px !important;
+    margin-bottom: 0 !important;
+    display: block !important;
+}
+
+#registerForm p {
+    width: 75% !important;
+}
+
+.form-text,
+#loginError {
+    color: red !important;
+    text-align: center !important;
+}
+
+#emailHelp,
+#passHelp,
+#cpassHelp {
+    display: none;
+}
+
+
+.form-check {
+    margin-top: 10px !important;
+}
+
+.login-area h4 {
+    color: black;
+    text-align: center;
+}
+
+.auth-media button {
+    background-color: transparent;
+    color: black;
+    display: block;
+    margin: 20px auto;
+    padding: 15px 50px;
+    width: 31%;
+    border: 1px solid black;
+    border-radius: 35px;
+    background-size: 48px;
+    background-repeat: no-repeat;
+    background-position: 5px 4px;
+}
+
+
+#registerForm {
+    display: none;
+}
+
+.form-container label {
+    margin-bottom: 5px !important;
+}
+
+.login-area hr {
+    color: black !important;
+    opacity: 1 !important;
+    width: 31% !important;
+    margin: 25px auto 0px auto !important;
+}
+
+#or {
+    margin-top: -17px;
+    background: #F4F5F7;
+    width: 32px;
+    margin: -17px auto auto auto;
+}
+
+@media only screen and (max-width: 768px) {
+    #registerForm p {
+        width: 80% !important;
+    }
+}

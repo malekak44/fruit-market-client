@@ -15,15 +15,17 @@
     background-repeat: no-repeat;
     background-size: 28px;
     background-position: 7px 11px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 #search-form input:focus {
     box-shadow: none;
+    border: 1px solid saddlebrown;
 }
 
 #searchBtn {
     font-size: 17px;
-    padding: 12px 25px;
+    padding: 13px 25px;
     margin-left: -24px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;

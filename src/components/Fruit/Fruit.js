@@ -6,7 +6,9 @@ const Fruit = () => {
     return (
         <>
             <Card>
-                <Card.Img variant="top" src="https://i.pinimg.com/736x/59/65/69/596569f3fcb2b6d1ba8c5cdd43223003.jpg" alt="fruit" />
+                <div className="image-container">
+                    <Card.Img variant="top" src="https://i.pinimg.com/736x/59/65/69/596569f3fcb2b6d1ba8c5cdd43223003.jpg" alt="fruit" />
+                </div>
                 <Card.Body>
                     <Card.Title>Card title</Card.Title>
                     <div className="card-details">
@@ -16,7 +18,9 @@ const Fruit = () => {
                 </Card.Body>
             </Card>
             <Card>
-                <Card.Img variant="top" src="https://i.pinimg.com/736x/59/65/69/596569f3fcb2b6d1ba8c5cdd43223003.jpg" alt="fruit" />
+                <div className="image-container">
+                    <Card.Img variant="top" src="https://i.pinimg.com/736x/59/65/69/596569f3fcb2b6d1ba8c5cdd43223003.jpg" alt="fruit" />
+                </div>
                 <Card.Body>
                     <Card.Title>Card title</Card.Title>
                     <div className="card-details">
@@ -26,7 +30,9 @@ const Fruit = () => {
                 </Card.Body>
             </Card>
             <Card>
-                <Card.Img variant="top" src="https://i.pinimg.com/736x/59/65/69/596569f3fcb2b6d1ba8c5cdd43223003.jpg" alt="fruit" />
+                <div className="image-container">
+                    <Card.Img variant="top" src="https://i.pinimg.com/736x/59/65/69/596569f3fcb2b6d1ba8c5cdd43223003.jpg" alt="fruit" />
+                </div>
                 <Card.Body>
                     <Card.Title>Card title</Card.Title>
                     <div className="card-details">
