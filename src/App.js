@@ -7,6 +7,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Admin from './components/Admin/Admin';
 export const UserContext = createContext();
 
 const App = () => {
@@ -20,6 +21,12 @@ const App = () => {
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route exact path="/admin">
+            <Admin />
+          </Route>
+          <Route path="/admin/:action">
+            <Admin />
           </Route>
         </Switch>
       </Router>

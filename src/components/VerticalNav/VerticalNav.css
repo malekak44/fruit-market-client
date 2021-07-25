@@ -1,0 +1,25 @@
+.vertical-nav {
+    background-color: #62442A;
+    min-width: 18rem;
+    width: 18rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.link {
+    width: 155px;
+    margin: 10px auto;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.link img {
+    width: 26px;
+    margin-top: -5px;
+}
+
+.link span {
+    color: white !important;
+}

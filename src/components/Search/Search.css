@@ -20,7 +20,7 @@
 
 #search-form input:focus {
     box-shadow: none;
-    border: 1px solid saddlebrown;
+    border: 1px solid #62442A;
 }
 
 #searchBtn {

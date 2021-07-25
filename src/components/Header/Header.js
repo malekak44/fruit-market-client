@@ -15,7 +15,7 @@ const Header = () => {
         loginStatus = <Link to="/login" style={{ textDecoration: "none", color: "rgba(0, 0, 0, .55)" }}><button>Login</button></Link>;
     }
     return (
-        <Navbar collapseOnSelect expand="lg">
+        <Navbar collapseOnSelect expand="lg" className="header">
             <Container>
                 <Link to="/" style={{ textDecoration: "none" }}>
                     <Navbar.Brand>

@@ -216,7 +216,7 @@ const Login = () => {
                         </div>
                         <button type="submit" className="btn btn-primary">Create an account</button>
                         <p>Already have an account?
-                            <span onClick={showLoginForm} style={{ color: "saddlebrown", cursor: "pointer" }}> Login</span>
+                            <span onClick={showLoginForm} style={{ color: "#62442A", cursor: "pointer" }}> Login</span>
                         </p>
                     </form>
                     <form id="loginForm" onSubmit={loginUser}>
@@ -234,11 +234,11 @@ const Login = () => {
                         <div className="form-check">
                             <input type="checkbox" className="form-check-input" id="remember" />
                             <label className="form-check-label" htmlFor="remember">Remember me</label>
-                            <span style={{ color: "saddlebrown", cursor: "pointer", float: "right" }}>Forgot Password</span>
+                            <span style={{ color: "#62442A", cursor: "pointer", float: "right" }}>Forgot Password</span>
                         </div>
                         <button type="submit" className="btn btn-primary">Login</button>
                         <p>Don't have an account?
-                            <span onClick={showRegisterForm} style={{ color: "saddlebrown", cursor: "pointer" }}> Create an account</span>
+                            <span onClick={showRegisterForm} style={{ color: "#62442A", cursor: "pointer" }}> Create an account</span>
                         </p>
                     </form>
                 </div>
