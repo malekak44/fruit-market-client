@@ -1,48 +1,19 @@
 import React from 'react';
 import './Fruit.css';
-import { Card } from 'react-bootstrap';
-import coconut from '../../icons/coconut.jpg';
 
-const Fruit = () => {
+const Fruit = ({ fruit }) => {
+    const { name, imageURL, price, weight } = fruit;
     return (
-        <>
-            <Card>
-                <div className="image-container">
-                    <Card.Img variant="top" src={coconut} alt="fruit" />
+        <div className="col">
+            <div className="card" style={{ width: "17rem" }}>
+                <img className="card-img-top" src={imageURL} alt={name} />
+                <div className="card-body">
+                    <h5 className="card-title text-center">{name} - {weight}</h5>
+                    <span className="card-text">${price}</span>
+                    <button className="buyBtn">Buy Now</button>
                 </div>
-                <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <div className="card-details">
-                        <h4>$367</h4>
-                        <button>Buy Now</button>
-                    </div>
-                </Card.Body>
-            </Card>
-            <Card>
-                <div className="image-container">
-                    <Card.Img variant="top" src={coconut} alt="fruit" />
-                </div>
-                <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <div className="card-details">
-                        <h4>$367</h4>
-                        <button>Buy Now</button>
-                    </div>
-                </Card.Body>
-            </Card>
-            <Card>
-                <div className="image-container">
-                    <Card.Img variant="top" src={coconut} alt="fruit" />
-                </div>
-                <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <div className="card-details">
-                        <h4>$367</h4>
-                        <button>Buy Now</button>
-                    </div>
-                </Card.Body>
-            </Card>
-        </>
+            </div>
+        </div>
     );
 };
 

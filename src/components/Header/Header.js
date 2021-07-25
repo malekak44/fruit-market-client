@@ -28,19 +28,19 @@ const Header = () => {
                     <Nav className="me-auto">
                     </Nav>
                     <Nav>
-                        <Nav.Link>
+                        <p className="nav-link">
                             <Link to="/" style={{ textDecoration: "none", color: "rgba(0, 0, 0, .55)" }}>Home</Link>
-                        </Nav.Link>
-                        <Nav.Link>
+                        </p>
+                        <p className="nav-link">
                             <Link to="/orders" style={{ textDecoration: "none", color: "rgba(0, 0, 0, .55)" }}>Orders</Link>
-                        </Nav.Link>
-                        <Nav.Link>
+                        </p>
+                        <p className="nav-link">
                             <Link to="/admin" style={{ textDecoration: "none", color: "rgba(0, 0, 0, .55)" }}>Admin</Link>
-                        </Nav.Link>
-                        <Nav.Link>Deals</Nav.Link>
-                        <Nav.Link>
+                        </p>
+                        <p className="nav-link">Deals</p>
+                        <p className="nav-link">
                             {loginStatus}
-                        </Nav.Link>
+                        </p>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

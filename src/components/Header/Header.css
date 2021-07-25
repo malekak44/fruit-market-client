@@ -3,7 +3,6 @@
 .navbar {
     font-size: 17px;
     font-weight: 500;
-    padding: 5px;
 }
 
 #logo {
@@ -19,6 +18,7 @@
 .header .nav-link {
     color: rgba(0, 0, 0, .55) !important;
     margin-left: 25px;
+    padding-top: 32px;
 }
 
 .header .nav-link:hover {
@@ -35,4 +35,10 @@
     width: 35px;
     border-radius: 50%;
     margin-top: -4px;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-brand {
+        font-size: 33px !important;
+    }
 }

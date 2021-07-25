@@ -1,43 +1,25 @@
-.card {
-    margin-right: 20px;
-    border-radius: 1rem !important;
-    text-align: center;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.card:nth-child(3n+0) {
-    margin-right: 0px;
-}
-
-.card img {
-    width: 85%;
-    margin: 20px auto;
-    border-radius: 10px !important;
-}
-
-.card-details {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0 5px 0;
-}
-
-.card-details h4 {
-    color: #61442A;
-}
-
-.card-details button {
-    padding: 10px;
-    padding: 5px 18px;
+.buyBtn {
+    display: inline !important;
+    padding: 5px 15px;
+    float: right;
     border-radius: 5px;
 }
 
-.image-container {
-    background: #E6E9EC;
-    border-radius: 16px;
-    width: 92%;
-    margin: 10px auto;
+.card-text {
+    font-size: 25px !important;
+    color: #61442A;
 }
 
-.card-title {
-    margin-top: -8px !important;
+.card-title,
+.card {
+    margin-bottom: 20px !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .col {
+        flex: none !important;
+        margin: auto !important;
+        width: 83%;
+        display: block;
+    }
 }

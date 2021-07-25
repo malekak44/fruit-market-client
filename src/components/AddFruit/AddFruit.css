@@ -1,13 +1,4 @@
-.page-title {
-    background-color: white;
-    padding: 15px 6%;
-}
-
-.page-title h4 {
-    margin-top: 2px;
-}
-
-.addfruit-section form {
+.addfruit-section .addfruit-form {
     width: 85%;
     background: white;
     margin: 40px auto;
@@ -29,10 +20,10 @@
     border: 1px solid #61442A;
 }
 
-.uploadBtn {
+#uploadBtn {
     display: block;
-    width: 50%;
-    padding: .375rem 3rem;
+    width: 48%;
+    padding: .375rem 0rem .375rem 3rem;
     border-radius: .25rem;
     line-height: 1.5;
     font-size: 1rem;
@@ -58,11 +49,18 @@ input[type="file"] {
     cursor: pointer;
 }
 
-.saveBtn {
+#saveBtn {
     width: 10% !important;
     background-color: #61442A !important;
     color: white !important;
     position: relative;
-    left: 82%;
+    float: right;
+    margin-right: 8% !important;
     margin-top: -1%;
+}
+
+.error {
+    color: #BB2D3B;
+    font-size: 14px;
+    margin-left: 6px;
 }

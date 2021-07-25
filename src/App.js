@@ -8,6 +8,7 @@ import {
   Route
 } from "react-router-dom";
 import Admin from './components/Admin/Admin';
+import Orders from './components/Orders/Orders';
 export const UserContext = createContext();
 
 const App = () => {
@@ -27,6 +28,9 @@ const App = () => {
           </Route>
           <Route path="/admin/:action">
             <Admin />
+          </Route>
+          <Route path="/orders">
+            <Orders />
           </Route>
         </Switch>
       </Router>
