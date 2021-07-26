@@ -11,6 +11,15 @@ const ManageFruit = () => {
             .then(res => res.json())
             .then(data => setFruits(data))
     }, []);
+
+    const deleteFruit = (id) => {
+        const deleteUrl = `http://localhost:4000/deleteFruit/${id}`;
+        fetch(deleteUrl, {
+            method: 'DELETE'
+        })
+            .then(res => console.log(res))
+    }
+
     return (
         <div>
             <div className="page-title">
@@ -34,7 +43,7 @@ const ManageFruit = () => {
                                 <td>${fr.price}</td>
                                 <td>
                                     <img src={editIcon} alt="edit" />
-                                    <img style={{ marginLeft: "7px" }} src={trushIcon} alt="trush" />
+                                    <img onClick={() => deleteFruit(`'${fr._id}'`)} style={{ marginLeft: "7px" }} src={trushIcon} alt="trush" />
                                 </td>
                             </tr>)
                         }

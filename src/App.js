@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import Admin from './components/Admin/Admin';
 import Orders from './components/Orders/Orders';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 export const UserContext = createContext();
 
 const App = () => {
@@ -23,15 +24,15 @@ const App = () => {
           <Route path="/login">
             <Login />
           </Route>
-          <Route exact path="/admin">
+          <PrivateRoute exact path="/admin">
             <Admin />
-          </Route>
-          <Route path="/admin/:action">
+          </PrivateRoute>
+          <PrivateRoute path="/admin/:action">
             <Admin />
-          </Route>
-          <Route path="/orders">
+          </PrivateRoute>
+          <PrivateRoute path="/orders">
             <Orders />
-          </Route>
+          </PrivateRoute>
         </Switch>
       </Router>
     </UserContext.Provider>

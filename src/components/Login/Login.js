@@ -157,7 +157,7 @@ const Login = () => {
                     image: result.user.photoURL
                 };
                 setSignedInUser(createdUser);
-                history.replace(from);
+                storeAuthToken();
             }).catch((error) => {
                 console.log(error);
             })
@@ -173,11 +173,20 @@ const Login = () => {
                     image: result.user.photoURL
                 };
                 setSignedInUser(createdUser);
-                history.replace(from);
+                storeAuthToken();
             }).catch((error) => {
                 console.log(error);
             })
     }
+
+    const storeAuthToken = () => {
+        firebase.auth().currentUser.getIdToken(true)
+            .then(function (idToken) {
+                sessionStorage.setItem('token', idToken);
+                history.replace(from);
+            })
+    }
+
     console.clear(signedInUser);
     return (
         <>

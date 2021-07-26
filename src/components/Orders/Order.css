@@ -1,0 +1,46 @@
+.order-details h3 {
+    color: #61442A;
+    font-weight: bold;
+    margin-left: 15.5%;
+    margin-bottom: 2%;
+}
+
+.order-details {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 4% auto;
+}
+
+#order-table {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    padding: 1.5%;
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#order-table th {
+    color: #A8A8A8 !important;
+}
+
+#order-table td {
+    font-weight: bold;
+    border-style: none !important;
+    border-bottom-width: 0px !important;
+}
+
+#order-table tbody tr:last-child {
+    border-top: 1px solid #A8A8A8;
+}
+
+#order-table tbody tr td:nth-child(2) {
+    padding-left: 3.5%;
+}
+
+#checkoutBtn {
+    position: relative;
+    float: right;
+    margin-right: 15.5% !important;
+    margin-top: 2%;
+    padding: 9px 1.5%;
+    border-radius: 5px;
+}

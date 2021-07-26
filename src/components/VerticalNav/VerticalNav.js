@@ -7,6 +7,17 @@ import editIcon from '../../icons/edit.png';
 import { Link } from 'react-router-dom';
 
 const VerticalNav = () => {
+    let navbar = document.getElementById("verNav");
+    if (navbar) {
+        let links = navbar.getElementsByClassName("nav-item");
+        for (let i = 0; i < links.length; i++) {
+            links[i].addEventListener("click", function () {
+                let current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    }
     return (
         <div className="vertical-nav" id="sidebar">
             <div className="pt-4 px-3 mb-4">
@@ -19,16 +30,16 @@ const VerticalNav = () => {
                 </Link>
             </div>
 
-            <ul className="nav flex-column mb-0">
-                <li className="nav-item">
-                    <Link to="/admin/manage" style={{ textDecoration: "none"}}>
+            <ul className="nav flex-column mb-0" id="verNav">
+                <li className="nav-item active">
+                    <Link to="/admin/manage" style={{ textDecoration: "none" }}>
                         <p className="link">
                             <img src={gridIcon} alt="edit" /> <span>Manage Fruits</span>
                         </p>
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/admin/add" style={{ textDecoration: "none"}}>
+                    <Link to="/admin/add" style={{ textDecoration: "none" }}>
                         <p className="link">
                             <img src={plusIcon} alt="edit" /> <span>Add Fruit</span>
                         </p>
